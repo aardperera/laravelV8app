@@ -8,7 +8,9 @@ class TodoController extends Controller
 {
 
     public function index(){
-        return view('pages.todo.index');
+        $response['tasks'] = $this->task->all();
+
+        return view('pages.todo.index')->with($response);
     }
 
     protected $task;
