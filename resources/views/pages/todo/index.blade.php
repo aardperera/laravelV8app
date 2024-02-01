@@ -48,6 +48,7 @@
                                     </td>
                                     <td>
                                         <a href="{{ route('todo.delete',$task->id )}}" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></a>
+                                        <a href="{{ route('todo.done',$task->id )}}" class="btn btn-success"><i class="fa fa-check" aria-hidden="true"></i></a>
                                     </td>
                                 </tr>
                             @endforeach
